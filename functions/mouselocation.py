@@ -1,5 +1,6 @@
 import keyboard
 import time
+import pyautogui
 
 def mouselocation():
     while not keyboard.is_pressed("z"):
