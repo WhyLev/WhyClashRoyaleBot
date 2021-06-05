@@ -1,5 +1,10 @@
-from main import *
-from cords.elexier_cords import *
+import pyautogui
+import keyboard
+import time
+import colorama
+import os
+
+from cords.elexier_cords import elexier_cords
 
 def elexier_check_new():
     time.sleep(2)
@@ -8,7 +13,7 @@ def elexier_check_new():
     for card in os.listdir("./pics/elexier_numbers/"):
         print(f"Starting {colorama.Fore.BLUE}{card}")
         starttime = time.time()
-        card_location = pyautogui.locateOnScreen(f'./pics/elexier_numbers/{card}', confidence=0.5) #, region=(760, 1025, 860, 1075)
+        card_location = pyautogui.locateOnScreen(f'./pics/elexier_numbers/{card}', confidence=0.5, region=(elexier_cords))
         endtime = time.time()
         print(f"{colorama.Fore.GREEN}{card}:")
         print(f"Insgesamt: {colorama.Fore.RED}{endtime - starttime} Sekuden")

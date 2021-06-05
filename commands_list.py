@@ -7,5 +7,7 @@ commands_list = {
     "elexiercheck": "caadasdadsasdadhecks the elexier status",
     "start_gui": "starts gui",
     "checkend": "Checks if game is ended",
+    "startgame": "Start Game",
+    "testcommand": "Test Command",
     "checkdeck": "checks which cards are acutally in the deck"
 }

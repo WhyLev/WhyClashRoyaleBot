@@ -4,7 +4,7 @@ from PyQt5 import QtCore
 from urllib.request import urlopen
 import json
 import pandas as pd
-import random
+import random1
 
 #open api link to database
 with urlopen("https://opentdb.com/api.php?amount=50&category=18&difficulty=medium&type=multiple") as webpage:
@@ -66,15 +66,7 @@ parameters = {
 #global dictionary of dynamically changing widgets
 widgets = {
     "logo": [],
-    "button": [],
-    "score": [],
-    "question": [],
-    "answer1": [],
-    "answer2": [],
-    "answer3": [],
-    "answer4": [],
-    "message": [],
-    "message2": []
+    "button": []
 }
 
 #initialliza grid layout
@@ -173,7 +165,7 @@ def is_correct(btn):
 def frame1():
     clear_widgets()
     #logo widget
-    image = QPixmap("logo.png")
+    image = QPixmap("../logo.png")
     logo = QLabel()
     logo.setPixmap(image)
     logo.setAlignment(QtCore.Qt.AlignCenter)
@@ -199,7 +191,7 @@ def frame1():
         '''
     )
     #button callback
-    button.clicked.connect(start_game)
+    button.clicked.connect()
     widgets["button"].append(button)
 
     #place global widgets on the grid
@@ -253,7 +245,7 @@ def frame2():
     widgets["answer4"].append(button4)
 
     #logo widget
-    image = QPixmap("logo.png")
+    image = QPixmap("../logo.png")
     logo = QLabel()
     logo.setPixmap(image)
     logo.setAlignment(QtCore.Qt.AlignCenter)

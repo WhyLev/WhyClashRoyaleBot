@@ -2,7 +2,7 @@ import pyautogui
 import time
 import os
 import colorama
-from cords.deck_ingame import *
+from cords.deck_ingame import deck_ingame
 
 def check_deck():
     time.sleep(2)

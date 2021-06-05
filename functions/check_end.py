@@ -2,7 +2,8 @@ import pyautogui
 import time
 import os
 import colorama
-from cords.end_screen_cord import *
+from cords.end_screen_cord import end_screen_cord
+
 #Working to import
 
 def check_game_end():
@@ -11,8 +12,7 @@ def check_game_end():
     for ok_screen in os.listdir("./pics/end_screen/"):
         print(f"Starting")
         starttime = time.time()
-        ok_location = pyautogui.locateOnScreen(f'./pics/end_screen/{ok_screen}', confidence=0.5, region=(865, 915, 1015, 990))
-                                                                                                        #region ./cords/end_screen_cord.py
+        ok_location = pyautogui.locateOnScreen(f'./pics/end_screen/{ok_screen}', confidence=0.5, region=(end_screen_cord))
         endtime = time.time()
         print("")
         print(f"Insgesamt: {colorama.Fore.RED}{endtime - starttime} Sekuden")

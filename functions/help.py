@@ -1,5 +1,18 @@
 def help_commands():
-    print("Help Menu")
-    print("Help Menu")
-    print("Help Menu")
-    print("Help Menu")
+    print(r"""
+
+      _____ _           _       _____                   _        ____        _   
+     / ____| |         | |     |  __ \                 | |      |  _ \      | |  
+    | |    | | __ _ ___| |__   | |__) |___  _   _  __ _| | ___  | |_) | ___ | |_ 
+    | |    | |/ _` / __| '_ \  |  _  // _ \| | | |/ _` | |/ _ \ |  _ < / _ \| __|
+    | |____| | (_| \__ \ | | | | | \ \ (_) | |_| | (_| | |  __/ | |_) | (_) | |_ 
+     \_____|_|\__,_|___/_| |_| |_|  \_\___/ \__, |\__,_|_|\___| |____/ \___/ \__|
+                                             __/ |                               
+                                            |___/                                
+
+                   """)
+    print("Help | Print Helpmenu")
+    print("Mouselocation | When you press 'q' prints your Mouselocation")
+
+
+    print("More Comming Soon")

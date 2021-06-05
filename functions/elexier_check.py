@@ -1,4 +1,6 @@
-from main import *
+import pyautogui
+import time
+
 
 def elexier_check():
     positions = [
@@ -18,4 +20,4 @@ def elexier_check():
         screen = pyautogui.screenshot()
         pixel = screen.getpixel(position)
         print(pixel)
-        # noch in Beta
+        #noch in Beta
